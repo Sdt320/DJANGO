@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'trip'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         'NAME': 'db_esver',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': '' ,
+        'PASSWORD': '333March*' ,
         'PORT':'3306'
     }
 }
