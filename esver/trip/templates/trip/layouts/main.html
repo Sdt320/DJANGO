@@ -1,3 +1,4 @@
+{% load static%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,6 +15,7 @@
 {% endblock title %}-->
     <title>Happy trip for EV
     </title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
   </head>
   <body>
     {% include 'trip/inc/navbar.html'%}
