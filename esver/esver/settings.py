@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'esver.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_esver',
+        'NAME': 'test_db',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': '333March*' ,
