@@ -24,11 +24,12 @@
                 <div class="col-md-4 col-lg-3">
                     <div class="card my-3">
                         <img src="{{item.image.url}}" class="card-image-top" alt="Categories">
-                        <a href="#"></a>
+                        <a href="{% url 'places' item.name %}">
                         <div class="card-boby">
-                            <h5 class="card-title text-primary">{{item.name}}</h5>
-                            <p class="card-text">{{item.description}}</p>
-                        </div>
+                                <h5 class="card-title text-primary">{{item.name}}</h5>
+                                <p class="card-text">{{item.description}}</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 {% endfor %}

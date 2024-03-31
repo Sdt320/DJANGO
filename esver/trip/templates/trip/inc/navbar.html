@@ -1,14 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">Hats_EV</a>
+      <a class="navbar-brand" href="{% url 'home' %}"><i class="fa fa-car"aria-hidden="true"></i> Hats_EV</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
-          <a class="nav-link" href="{% url 'register' %}">Register</a>
-          <a class="nav-link" href="{% url 'places' %}">Places</a>
+          <a class="nav-link" aria-current="page" href="{% url 'home' %}"><i class="fa fa-home"aria-hidden="true"></i>Home</a>
+          <a class="nav-link" href="{% url 'register' %}"><i class="fa fa-user"aria-hidden="true"></i>Register</a>
+          <a class="nav-link" href="{% url 'places' %}"><i class="fa fa-cubes"aria-hidden="true"></i>Places</a>
+          <a class="nav-link" href="#"><i class="fa fa-tripadvisor"aria-hidden="true"></i>cart</a>
+
         </div>
       </div>
     </div>
