@@ -1,0 +1,41 @@
+{% extends 'trip/layouts/main.html' %}
+<!-- for dynamic title 
+       {% block title %} 
+       {% endblock title %}-->
+{% block content %} 
+<section class="bg-light py-4 my-5" style="min-height:600px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="mb-3">  {{products.name}} Details</h4>
+          <hr style="border-color:#b8bfc2;">
+          {% include 'trip/inc/message.html' %}
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'places' products.catagory.name %}">Places</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{products.name}}</li>
+            </ol>
+          </nav>
+          
+        </div>
+        <div class="col-4 my-3">
+            <div class="card my-3">
+                <img src="{{products.product_image.url}}"  class="card-image-top" alt="{{products.name}}">
+            </div>
+
+            </div>
+        <div class="col-8 my-3">
+            <h5 class="text-success">{{products.name | upper}}</h5>
+            <p>{{products.vendor}}</p>
+            <p>{{products.description}}</p>
+            <div class="my-3">
+               <button class="btn btn-primary" id="btnCart"><i class="fa fa-car"></i> listed</button>
+               <button class="btn btn-danger" id="btnFav"><i class="fa fa-heart"></i></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
+    

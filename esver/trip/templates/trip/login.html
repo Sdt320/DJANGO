@@ -3,16 +3,15 @@
        {% block title %} 
        {% endblock title %}-->
 {% block content %} 
+{% include 'trip/inc/slider.html' %} 
 <div class="container" style="margin-top: 70px;">
     <div class="row">   
-        <div class="col-12"></div>
-         <h1>Hello, use extention user!</h1>
+        <div class="col-12">
+         <h1>Hello, use extention user login!</h1>
+         {% include 'trip/inc/message.html' %}
+        </div>
 
 
     </div>
 </div>
 {% endblock content %}
-    
-
-    
-    

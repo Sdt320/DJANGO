@@ -7,14 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h4 class="mb-3">{{category_name}} Products</h4>
+          <h4 class="mb-3">Places To Vist In {{category_name}} </h4>
           <hr style="border-color:#b8bfc2;">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-              <li class="breadcrumb-item active">{{category_name}} Collections</li>
-            </ol>
-          </nav>
           {% include 'trip/inc/message.html' %}
         </div>
         {% for item in products %}
